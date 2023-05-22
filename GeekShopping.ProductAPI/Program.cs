@@ -11,7 +11,7 @@ var connection = builder.Configuration["MySqlConnection:MySQLConnectionString"];
 
 builder.Services.AddDbContext<MySqlContext>(options => options.UseMySql(
     connection, 
-    new MySqlServerVersion(new Version(8, 0, 29)))
+    new MySqlServerVersion(new Version(8, 0, 32)))
 );
 
 builder.Services.AddControllers();
